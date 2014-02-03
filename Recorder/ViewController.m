@@ -50,7 +50,7 @@
     [player play];
     
     _lblState.text = @"Fim da Reprodução";
-
+        //what2
     }
 }
 
