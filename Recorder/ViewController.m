@@ -35,6 +35,7 @@
         [_btRecord setTitle:@"Record" forState:UIControlStateNormal];
         _lblState.text = @"Gravado";
         [_recorder stop];
+        //what
         _btPBack.hidden = NO;
     }
 }
