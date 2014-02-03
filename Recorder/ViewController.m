@@ -35,7 +35,7 @@
         [_btRecord setTitle:@"Record" forState:UIControlStateNormal];
         _lblState.text = @"Gravado";
         [_recorder stop];
-        //what
+        
         _btPBack.hidden = NO;
     }
 }
@@ -65,6 +65,10 @@
     [RecAudio setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
     
     [RecAudio setActive:YES error:nil];
+    
+    if(RecAudio == nil){
+        NSLog(@"audio file was not created");
+    }
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
